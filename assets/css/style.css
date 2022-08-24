@@ -1,0 +1,70 @@
+* {
+  font-family: "Orbitron", sans-serif;
+  font-family: "Silkscreen", cursive;
+  background-color: var(--beige);
+}
+
+:root {
+  --purple: #cdb4db;
+  --light-pink: #ffc8dd;
+  --pink: #ffafcc;
+  --light-blue: #bde0fe;
+  --blue: #a2d2ff;
+  --beige: #f5f5dc;
+}
+
+a {
+  color: var(--blue);
+  float: left;
+}
+
+a:hover {
+  color: var(--pink);
+}
+
+#currentTime {
+  float: right;
+  background-color: var(--purple);
+  color: white;
+}
+
+body {
+  margin-top: 45px;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+#quiz {
+  justify-content: center;
+  padding-top: 50px;
+}
+
+li {
+  list-style-type: none;
+  padding: 13px;
+}
+
+li:hover {
+  color: var(--pink);
+  cursor: pointer;
+}
+
+#choicesUl:hover {
+  color: var(--pink);
+}
+
+button {
+  margin: 4% 17px;
+  padding: 17px 35px;
+  border-radius: 6.5px;
+  color: white;
+  background-color: var(--blue);
+  border-style: hidden;
+  align-items: center;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: pink;
+}
