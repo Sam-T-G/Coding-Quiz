@@ -18,32 +18,32 @@ var ulCreate = document.createElement("ul");
 // Quiz Questions, possible selections, and answers.
 var questions = [
   {
-    question: "Question placeholder",
+    question: "Question placeholder ___ ",
     choices: ["wrong choice", "wrong choice", "wrong choice", "correct choice"],
     answer: "correct choice",
   },
 
   {
-    question: "Question placeholder",
-    choices: ["wrong choice", "wrong choice", "wrong choice", "correct choice"],
+    question: "Question placeholder____",
+    choices: ["wrong choice", "correct choice", "wrong choice", "wrong choice"],
     answer: "correct choice",
   },
 
   {
-    question: "Question placeholder",
-    choices: ["wrong choice", "wrong choice", "wrong choice", "correct choice"],
+    question: "Question placeholder____",
+    choices: ["wrong choice", "wrong choice", "correct choice", "wrong choice"],
     answer: "correct choice",
   },
 
   {
-    question: "Question placeholder",
-    choices: ["wrong choice", "wrong choice", "wrong choice", "correct choice"],
+    question: "Question placeholder ____",
+    choices: ["correct choice", "wrong choice", "wrong choice", "wrong choice"],
     answer: "correct choice",
   },
 
   {
-    question: "Question placeholder",
-    choices: ["wrong choice", "wrong choice", "wrong choice", "correct choice"],
+    question: "Question placeholder ____",
+    choices: ["wrong choice", "correct choice", "wrong choice", "wrong choice"],
     answer: "correct choice",
   },
 ];
@@ -71,7 +71,7 @@ function render(questionIndex) {
   questionsEl.innerHTML = "";
   ulCreate.innerHTML = "";
   for (var i = 0; i < questions.length; i++) {
-    var userQuestion = questions[questionIndex].title;
+    var userQuestion = questions[questionIndex].question;
     var userChoices = questions[questionIndex].choices;
     questionsEl.textContent = userQuestion;
   }
@@ -131,7 +131,7 @@ function allDone() {
 
   var createH1 = document.createElement("h1");
   createH1.setAttribute("id", "createH1");
-  createH1.textContent = "All Done!";
+  createH1.textContent = "Game Over!";
 
   questionsEl.appendChild(createH1);
 
@@ -146,8 +146,6 @@ function allDone() {
     var createP2 = document.createElement("p");
     clearInterval(holdInterval);
     createP.textContent = "Your final score is: " + timeRemaining;
-
-    questionsEl.appendChild(createP2);
   }
 
   // initials prompt
