@@ -11,7 +11,7 @@ Screenshot of the completed application
 ## Link of Webpage
 https://sam-t-g.github.io/Coding-Quiz/
 
-##License
+## License
 MIT License
 
 Copyright (c) 2022 Samuel Gerungan
