@@ -1,4 +1,4 @@
-var highScore = document.querySelector("#highScore");
+var highscores = document.querySelector("#highScores");
 var clear = document.querySelector("#clear");
 var goBack = document.querySelector("#goBack");
 
@@ -12,11 +12,15 @@ clear.addEventListener("click", function () {
 var allScores = localStorage.getItem("allScores");
 allScores = JSON.parse(allScores);
 
+// 'not equals' null not necessary because JS automatically calculates whether or not allScores is truthsy/falsy
 if (allScores !== null) {
+  allScores.sort((a, b) => {
+    return b.score - a.score;
+  });
   for (var i = 0; i < allScores.length; i++) {
     var createLi = document.createElement("li");
     createLi.textContent = allScores[i].initials + " " + allScores[i].score;
-    highScores.appendChild(createLi);
+    highscores.appendChild(createLi);
   }
 }
 
