@@ -1,5 +1,5 @@
 # Coding-Quiz
-This is a functional password generator that can create an RNG password using user-specified criteria.
+This quiz on JavaScript fundamentals is an exercise in creating a functional game-style application with a functioning timer, recprded scores, and high-scores page that displays scores stored in local storage.
 
 ## Description
 This is a quiz on basic JavaScript fundamentals. This quiz is has a score calculated by the amount of time remaining once completed. Incorrect answers dock 10 seconds off of the time remaining. The quiz also has a high-scores page that locally stores scores and can be cleared with a "clear highscores" button. The high-scores page acan also be navigated to from the main application at any time.
