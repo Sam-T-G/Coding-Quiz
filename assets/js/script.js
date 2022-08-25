@@ -18,33 +18,36 @@ var ulCreate = document.createElement("ul");
 // Quiz Questions, possible selections, and answers.
 var questions = [
   {
-    question: "Question placeholder ___ ",
-    choices: ["wrong choice", "wrong choice", "wrong choice", "correct choice"],
-    answer: "correct choice",
+    question: "What can arrays be used to store?",
+    choices: ["booleans", "additional arrays", "strings", "all of the above"],
+    answer: "all of the above",
   },
 
   {
-    question: "Question placeholder____",
-    choices: ["wrong choice", "correct choice", "wrong choice", "wrong choice"],
-    answer: "correct choice",
+    question:
+      "The condition in an if/else statement is enclosed in _____________.",
+    choices: ["quotes", "parentheses", "curly brackets", "square brackets"],
+    answer: "curly brackets",
   },
 
   {
-    question: "Question placeholder____",
-    choices: ["wrong choice", "wrong choice", "correct choice", "wrong choice"],
-    answer: "correct choice",
+    question:
+      "String values must be enclosed within ___________ when being assigned to variables.",
+    choices: ["quotes", "parentheses", "commas", "curly brackets"],
+    answer: "quotes",
   },
 
   {
-    question: "Question placeholder ____",
-    choices: ["correct choice", "wrong choice", "wrong choice", "wrong choice"],
-    answer: "correct choice",
+    question: "Commonly used data types do NOT include:",
+    choices: ["alerts", "booleans", "strings", "numbers"],
+    answer: "alerts",
   },
 
   {
-    question: "Question placeholder ____",
-    choices: ["wrong choice", "correct choice", "wrong choice", "wrong choice"],
-    answer: "correct choice",
+    question:
+      "A very useful tool used during development and debugging for printing content to the debugger is:",
+    choices: ["JavaScript", "console.log", "terminal/GitBash", "for loops"],
+    answer: "console.log",
   },
 ];
 
